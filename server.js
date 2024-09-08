@@ -110,7 +110,7 @@ app.use((req, res, next) => {
 });
 
 // Define the port number
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 // Start the server
 server.listen(port, () => {
